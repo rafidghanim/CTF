@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackers</title>
+    <style>
+      body {
+        background: black;
+        color: lime;
+        font-family: "Courier New", monospace;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .raindrop {
+        position: absolute;
+        animation: fall linear infinite;
+        animation-duration: 1s;
+        bottom: 100vh;
+        white-space: nowrap;
+        user-select: none;
+      }
+
+      @keyframes fall {
+        to {
+          transform: translateY(100vh);
+        }
+      }
+
+      .login-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 20px;
+        cursor: pointer;
+        animation: slideDown ease-out 0.5s;
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .login-form {
+        display: none;
+        margin-top: 10px;
+      }
+
+      .login-form input {
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid lime;
+        border-radius: 5px;
+        background-color: black;
+        color: lime;
+      }
+
+      .crack-animation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("static/1*S_7Px-YzohlAo_a040MjTA.gif") center/cover no-repeat;
+        opacity: 0;
+        animation: crack linear 1s forwards;
+        z-index: 1;
+      }
+
+      @keyframes crack {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Hacker</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis justo sit amet tortor molestie fringilla vel vel libero. Nullam lacinia semper lacus, sit amet semper orci. Integer sit amet justo nec turpis luctus euismod. Sed eu
+      augue vel libero viverra posuere. Etiam eu tellus nec lacus finibus aliquam nec vel urna. Sed varius, ex ac vehicula dapibus, velit odio varius felis, id vehicula turpis ex eu nisi.
+    </p>
+    <p>
+      Quisque fermentum fermentum dapibus. Curabitur in ante ac tortor semper tincidunt. Suspendisse nec turpis eu nisl tincidunt pellentesque. Integer sit amet nunc a libero vehicula vehicula. Fusce tincidunt, justo nec tincidunt
+      fermentum, ex purus imperdiet arcu, in pulvinar ligula elit eu elit. Nulla nec tortor a mi bibendum consectetur. Aliquam erat volutpat.
+    </p>
+    <p>
+      Phasellus nec sapien eu augue sagittis malesuada. Ut in massa ac nulla hendrerit eleifend ut id dolor. Sed facilisis erat id mauris efficitur, at lacinia turpis varius. Fusce eu vulputate arcu, in fermentum ipsum. Vivamus venenatis,
+      ex a dictum dapibus, orci urna aliquam elit, nec fermentum augue dolor ac dui. Integer id felis justo. Pellentesque euismod libero nec odio bibendum venenatis.
+    </p>
+    <p>
+      Donec suscipit augue vel velit ultrices, non congue justo posuere. In hac habitasse platea dictumst. Integer sed enim eu metus feugiat consequat nec sit amet felis. Duis eleifend erat eu accumsan posuere. Aliquam at justo in dolor
+      luctus suscipit. Quisque ut vestibulum leo. Vestibulum vel libero ac nulla venenatis dignissim. Sed ullamcorper quam ac fermentum eleifend.
+    </p>
+
+    <div class="login-container" onclick="toggleLoginForm()">
+      <p>Click here to login</p>
+      <form class="login-form">
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <button type="button" onclick="attemptLogin()">Login</button>
+      </form>
+      <div class="crack-animation"></div>
+    </div>
+
+    <script>
+      function toggleLoginForm() {
+        const loginForm = document.querySelector(".login-form");
+        loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
+      }
+
+      function attemptLogin() {
+        const crackAnimation = document.querySelector(".crack-animation");
+        crackAnimation.style.animation = "crack linear 1s forwards";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const body = document.body;
+
+        function createRaindrop() {
+          const raindrop = document.createElement("span");
+          raindrop.className = "raindrop";
+          raindrop.style.left = `${Math.random() * 100}vw`;
+          raindrop.textContent = getRandomCharacter();
+          body.appendChild(raindrop);
+          setTimeout(() => {
+            raindrop.remove();
+          }, 1000);
+        }
+
+        function getRandomCharacter() {
+          const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[{]};:'\",<.>/?`~";
+          return characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+
+        function generateRainfall() {
+          setInterval(createRaindrop, 100);
+        }
+
+        generateRainfall();
+      });
+    </script>
+  </body>
+</html>
