@@ -75,7 +75,9 @@ based on code i notice that:
 * the user input xored with srand() value
 * the length of flag is 35
 so, to retrieve the flag value:
+
 gdb -> set break point into cmp -> input 0*35 -> xor the output with v9 -> flag
+
 > leet@lzi~# gdb cyber_k
 ```
 GNU gdb (Debian 13.2-1) 13.2
@@ -296,15 +298,23 @@ gdb-peda$
 
 ```
 we get RCX: 0x7fffffffdc20 ("151>7;;>:10<1;455761>5;70><<?<=01>?")
+
 since we know that the mechanism of the binary is using xor to compare with real value
+
 then, just guest the uknown int symbol like >;<?=
+
 we know that the flag is started with shaktictf{
+
 xor(1,114) = s
+
 xor(5,109) = h
-and soon untii the last xor = }
+
+and so on untii the last xor = }
 
 after long comparing each other i get
+
 #before_s = "151>7;;>:10<1;455761>5;70><<?<=01>?"
+
 s =[1, 5, 1, 14, 7, 11, 11, 14, 10, 1, 0, 12, 1, 11, 4, 5, 5, 7, 6, 1, 14, 5, 11, 7, 0, 14, 12, 12, 15, 12, 13, 0, 1, 14, 15]
 
 then xor them with v9 array
