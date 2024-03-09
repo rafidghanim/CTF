@@ -255,7 +255,7 @@ Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
 Please enter the flag: 00000000000000000000000000000000000
 [----------------------------------registers-----------------------------------]
 RAX: 0x31 ('1')
-RBX: 0x7fffffffdd68 --> 0x7fffffffe0da ("/home/kecoakterbang/CTF/shakticon/cyber_kingdom/cyber_k")
+RBX: 0x7fffffffdd68 --> 0x7fffffffe0da ("cyber_k")
 RCX: 0x7fffffffdc20 ("151>7;;>:10<1;455761>5;70><<?<=01>?")
 RDX: 0x72 ('r')
 RSI: 0x5555555596b1 ('0' <repeats 34 times>, "\n")
