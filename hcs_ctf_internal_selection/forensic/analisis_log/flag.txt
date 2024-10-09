@@ -1,0 +1,40 @@
+└─$ nc 178.128.218.40 3001
+Silahkan jawab pertanyaan-pertanyaan yang telah disediakan:
+
+No 1:
+Pertanyaan: Pukul berapa penyerang memulai melakukan fuzzing?
+Format: 01/Jan/2024:01:02:03
+Jawaban: 06/Sep/2024:15:51:02
+Correct
+
+No 2:
+Pertanyaan: Nama plugin WordPress apa yang memiliki kerentanan yang dimanfaatkan oleh penyerang?
+Format: -
+Jawaban: canto
+Correct
+
+No 3:
+Pertanyaan: CVE apa yang digunakan oleh penyerang untuk mengeksploitasi server?
+Format: CVE-2024-10101
+Jawaban: CVE-2023-3452
+Correct
+
+No 4:
+Pertanyaan: Alamat IP apa saja yang dimiliki oleh penyerang? (Urutkan IP yang terkecil ke yang terbesar)
+Format: 10.0.0.1,193.193.201.201
+Jawaban: 68.183.26.104,182.1.91.201
+Correct
+
+No 5:
+Pertanyaan: File apa yang diperiksa isinya oleh penyerang, berikan full pathnya?
+Format: /path/to/example
+Jawaban: /etc/passwd
+Correct
+
+No 6:
+Pertanyaan: Apa nama file yang ditaruh oleh penyerang ke dalam server?
+Format: example.txt
+Jawaban: dustak_32312.php
+Correct
+
+Congrats! Flag: HCS{asik_lho_belajar_analisis_log_server}
