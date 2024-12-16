@@ -82,9 +82,9 @@ Upon visiting `ai.apolo.htb`, I gathered the following details:
 
 ---
 
-![[assets/images/Pasted image 20241216171139.png]]
+![](assets/images/Pasted image 20241216171139.png)
 
-![[assets/images/Pasted image 20241216171721.png]]
+![](assets/images/Pasted image 20241216171721.png)
 #### Observations
 
 The initial enumeration uncovered two critical pieces of information:
@@ -95,7 +95,7 @@ The initial enumeration uncovered two critical pieces of information:
 These findings set the stage for further exploitation of the FlowiseAI platform.
 # Foothold
 
-![[assets/images/Pasted image 20241216172037.png]]
+![](assets/images/Pasted image 20241216172037.png)
 While researching Flowise, I discovered that versions <= 1.6.5 are vulnerable to a known issue listed as `CVE-2024-31621`.
 ### CVE-2024-31621: Flowise 1.6.5 - Authentication Bypass Vulnerability
 
@@ -138,7 +138,7 @@ The endpoint revealed a credentials ID. Next, I accessed the credentials directl
 ### **Accessing the Shell**
 
 The `mongoDBConnectUrl` revealed the username `lewis` and password `C0mpl3xi3Ty!_W1n3`. I used these credentials to attempt SSH access.
-![[assets/images/Pasted image 20241216173546.png]]
+![](assets/images/Pasted image 20241216173546.png)
 Bingo, we get the user !!!
 # Lateral Movement
 After gaining access to the user `lewis`, I enumerated their `sudo` privileges using `sudo -l` and discovered the following:
