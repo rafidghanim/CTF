@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaaS - Flag as a Service 🚩</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'faas-purple': '#8B5CF6',
+                        'faas-pink': '#EC4899',
+                        'faas-blue': '#3B82F6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-black/20 backdrop-blur-sm border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-white">
+                        🚩 <span class="bg-gradient-to-r from-faas-purple to-faas-pink bg-clip-text text-transparent">FaaS</span>
+                    </h1>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/" class="text-white hover:text-faas-purple transition-colors px-3 py-2 rounded-md text-sm font-medium bg-white/10">Home</a>
+                    <a href="/license" class="text-white hover:text-faas-pink transition-colors px-3 py-2 rounded-md text-sm font-medium">License</a>
+                    <a href="/flag" class="text-white hover:text-faas-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">Get Flag</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-6xl md:text-8xl font-extrabold text-white mb-8">
+                    <span class="bg-gradient-to-r from-faas-purple via-faas-pink to-faas-blue bg-clip-text text-transparent">
+                        FaaS
+                    </span>
+                </h1>
+                <p class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Flag as a Service
+                </p>
+                <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                    🎯 The ultimate premium flagging experience! Get your flags delivered instantly with our enterprise-grade service. 
+                    <span class="text-faas-pink font-semibold">Only $9999/month!</span>
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                    <a href="/license" class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-faas-purple to-faas-pink rounded-full hover:shadow-2xl hover:shadow-faas-pink/50 transition-all duration-300 transform hover:scale-105">
+                        <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-faas-purple to-faas-pink rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></span>
+                        <span class="relative">🔑 Activate License</span>
+                    </a>
+                    <a href="/flag" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-faas-blue border-2 border-faas-blue rounded-full hover:bg-faas-blue hover:text-white transition-all duration-300">
+                        🚩 Get Your Flag
+                    </a>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                        <div class="text-4xl mb-4">⚡</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Lightning Fast</h3>
+                        <p class="text-gray-300">Get your flags in milliseconds with our quantum-powered infrastructure!</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                        <div class="text-4xl mb-4">🔒</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Ultra Secure</h3>
+                        <p class="text-gray-300">Military-grade encryption protects your precious flags from hackers!</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                        <div class="text-4xl mb-4">📈</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Scalable</h3>
+                        <p class="text-gray-300">From 1 to 1 billion flags, we've got you covered!</p>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div class="mt-20">
+                    <h2 class="text-3xl font-bold text-white mb-12">What Our Customers Say</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gradient-to-r from-faas-purple/20 to-faas-pink/20 rounded-2xl p-6 border border-white/20">
+                            <p class="text-white mb-4 italic">"FaaS revolutionized our flag game! Now we can focus on what really matters: getting more flags!"</p>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gradient-to-r from-faas-purple to-faas-pink rounded-full flex items-center justify-center text-white font-bold">H</div>
+                                <div class="ml-3">
+                                    <p class="font-semibold text-white">H4ck3r_B0y</p>
+                                    <p class="text-gray-400 text-sm">Professional CTF Player</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-r from-faas-blue/20 to-faas-purple/20 rounded-2xl p-6 border border-white/20">
+                            <p class="text-white mb-4 italic">"I used to spend hours looking for flags. Now with FaaS, I get them instantly! 10/10 would recommend!"</p>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gradient-to-r from-faas-blue to-faas-purple rounded-full flex items-center justify-center text-white font-bold">P</div>
+                                <div class="ml-3">
+                                    <p class="font-semibold text-white">Pwn_Master_9000</p>
+                                    <p class="text-gray-400 text-sm">Elite Hacker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Effects -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-faas-purple rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+            <div class="absolute top-3/4 right-1/4 w-64 h-64 bg-faas-pink rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
+            <div class="absolute bottom-1/4 left-1/2 w-64 h-64 bg-faas-blue rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black/20 backdrop-blur-sm border-t border-white/10 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-white mb-4">Ready to revolutionize your flag experience?</h3>
+                <p class="text-gray-400 mb-6">Join thousands of satisfied customers who trust FaaS for their flagging needs!</p>
+                <a href="/license" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-faas-purple to-faas-pink hover:from-faas-pink hover:to-faas-purple transition-all duration-300">
+                    Start Your Journey
+                </a>
+                <div class="mt-8 pt-8 border-t border-white/10">
+                    <p class="text-gray-500 text-sm">© 2025 FaaS Corp. All rights reserved. No flags were harmed in the making of this service.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

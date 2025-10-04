@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Flag - FaaS 🚩</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'faas-purple': '#8B5CF6',
+                        'faas-pink': '#EC4899',
+                        'faas-blue': '#3B82F6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-black/20 backdrop-blur-sm border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-white">
+                        🚩 <span class="bg-gradient-to-r from-faas-purple to-faas-pink bg-clip-text text-transparent">FaaS</span>
+                    </h1>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/" class="text-white hover:text-faas-purple transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="/license" class="text-white hover:text-faas-pink transition-colors px-3 py-2 rounded-md text-sm font-medium">License</a>
+                    <a href="/flag" class="text-white hover:text-faas-blue transition-colors px-3 py-2 rounded-md text-sm font-medium bg-white/10">Get Flag</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Flag Section -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-extrabold text-white mb-6">
+                <span class="bg-gradient-to-r from-faas-purple to-faas-pink bg-clip-text text-transparent">
+                    Your Premium Flag
+                </span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                🎯 Congratulations! Here's your exclusive FaaS flag, delivered with premium quality and lightning speed!
+            </p>
+        </div>
+
+        <!-- Flag Display -->
+        <div class="max-w-2xl mx-auto">
+            {% if "FAKE_FLAG" in flag or "You need to activate" in flag %}
+                <!-- Not Activated / Fake Flag -->
+                <div class="bg-red-500/20 backdrop-blur-sm rounded-2xl p-8 border border-red-500/50 shadow-2xl mb-8">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🔒</div>
+                        <h2 class="text-2xl font-bold text-white mb-4">License Required</h2>
+                        <div class="bg-black/30 rounded-lg p-6 border border-red-500/30">
+                            <p class="text-red-300 font-mono text-lg break-all">{{ flag }}</p>
+                        </div>
+                        <p class="text-gray-300 mt-4 mb-6">
+                            Oops! Looks like you need a valid FaaS license to access premium flags. 
+                            Don't worry, activating is super easy!
+                        </p>
+                        <a href="/license" class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-faas-purple to-faas-pink text-white font-bold rounded-lg hover:shadow-lg hover:shadow-faas-pink/50 transition-all duration-300 transform hover:scale-105">
+                            🔑 Activate License Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Features Preview -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                    <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                        <div class="text-3xl mb-3">⚡</div>
+                        <h3 class="text-lg font-semibold text-white mb-2">Instant Access</h3>
+                        <p class="text-gray-300 text-sm">Get your flags immediately after license activation</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                        <div class="text-3xl mb-3">🏆</div>
+                        <h3 class="text-lg font-semibold text-white mb-2">Premium Quality</h3>
+                        <p class="text-gray-300 text-sm">Only the finest flags, crafted by our flag artisans</p>
+                    </div>
+                </div>
+            {% else %}
+                <!-- Valid Flag -->
+                <div class="bg-green-500/20 backdrop-blur-sm rounded-2xl p-8 border border-green-500/50 shadow-2xl mb-8">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🎉</div>
+                        <h2 class="text-2xl font-bold text-white mb-4">Success! Your Flag is Ready</h2>
+                        <div class="bg-black/30 rounded-lg p-6 border border-green-500/30 relative">
+                            <p class="text-green-300 font-mono text-xl break-all select-all">{{ flag }}</p>
+                            <button 
+                                onclick="copyToClipboard('{{ flag }}')" 
+                                class="absolute top-2 right-2 p-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors"
+                                title="Copy to clipboard"
+                            >
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="text-gray-300 mt-4">
+                            🎊 Congratulations! You've successfully retrieved your premium FaaS flag. 
+                            This flag was delivered using our quantum-powered infrastructure for maximum quality!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Success Stats -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                    <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 text-center">
+                        <div class="text-2xl font-bold text-faas-purple mb-2">< 1ms</div>
+                        <p class="text-gray-300 text-sm">Delivery Time</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 text-center">
+                        <div class="text-2xl font-bold text-faas-pink mb-2">99.9%</div>
+                        <p class="text-gray-300 text-sm">Uptime</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 text-center">
+                        <div class="text-2xl font-bold text-faas-blue mb-2">Premium</div>
+                        <p class="text-gray-300 text-sm">Quality Grade</p>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Additional Actions -->
+        <div class="text-center mt-12">
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-white">What's Next?</h3>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    {% if "FAKE_FLAG" in flag or "You need to activate" in flag %}
+                        <a href="/license" class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-faas-purple to-faas-pink text-white font-medium rounded-lg hover:shadow-lg transition-all duration-300">
+                            🔑 Get License
+                        </a>
+                    {% else %}
+                        <button 
+                            onclick="location.reload()" 
+                            class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-faas-blue to-faas-purple text-white font-medium rounded-lg hover:shadow-lg transition-all duration-300"
+                        >
+                            🔄 Get Another Flag
+                        </button>
+                    {% endif %}
+                    <a href="/" class="inline-flex items-center justify-center px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-all duration-300">
+                        🏠 Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-faas-purple rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+        <div class="absolute top-3/4 right-1/4 w-64 h-64 bg-faas-pink rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Show a temporary success message
+                const button = event.target.closest('button');
+                const originalContent = button.innerHTML;
+                button.innerHTML = '<svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
+                setTimeout(() => {
+                    button.innerHTML = originalContent;
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

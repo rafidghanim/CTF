@@ -1,0 +1,5 @@
+services:
+  jail:
+    build: .
+    ports:
+      - 1337:1337
