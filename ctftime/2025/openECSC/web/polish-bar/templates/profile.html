@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Polish Bar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #8B0000, #D4AF37);
+            margin: 0;
+            padding: 20px;
+            color: #2C1810;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 248, 225, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 3px solid #D4AF37;
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #D4AF37;
+        }
+        .profile-header h1 {
+            color: #8B0000;
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .username {
+            color: #2C1810;
+            font-size: 1.3em;
+            margin: 10px 0;
+        }
+        .info-section {
+            background: rgba(212, 175, 55, 0.2);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 4px solid #8B0000;
+        }
+        .info-section h3 {
+            color: #8B0000;
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        .preferred-beverage {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #8B0000;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .alcohol-shelf {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .drink-item {
+            background: linear-gradient(45deg, #8B0000, #A52A2A);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+        .drink-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #8B0000, #A52A2A);
+            color: white;
+        }
+        .btn-secondary {
+            background: linear-gradient(45deg, #D4AF37, #B8860B);
+            color: #2C1810;
+        }
+        .btn-warning {
+            background: linear-gradient(45deg, #FF6B6B, #EE5A24);
+            color: white;
+        }
+        .btn-small {
+            padding: 8px 16px;
+            font-size: 0.9em;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .empty-shelf {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+        }
+        
+        /* Form Styles */
+        .beverage-form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 2px solid #D4AF37;
+        }
+        .danger-form {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #FF6B6B;
+            margin-top: 15px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #8B0000;
+        }
+        .danger-form .form-group label {
+            color: #FF6B6B;
+        }
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #D4AF37;
+            border-radius: 8px;
+            font-size: 1em;
+            box-sizing: border-box;
+            background: #FFF8E1;
+            transition: border-color 0.3s ease;
+        }
+        .danger-form .form-input {
+            border-color: #FF6B6B;
+            background: #FFF5F5;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #8B0000;
+            box-shadow: 0 0 5px rgba(139, 0, 0, 0.5);
+        }
+        .danger-form .form-input:focus {
+            border-color: #FF6B6B;
+            box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+        }
+        .form-submit {
+            background: linear-gradient(45deg, #8B0000, #A52A2A);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .form-submit-warning {
+            background: linear-gradient(45deg, #FF6B6B, #EE5A24);
+        }
+        .form-submit:hover {
+            background: linear-gradient(45deg, #A52A2A, #8B0000);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .form-submit-warning:hover {
+            background: linear-gradient(45deg, #EE5A24, #FF6B6B);
+        }
+        .hidden-input {
+            display: none;
+        }
+        .form-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .form-actions .form-submit {
+            flex: 1;
+            min-width: 120px;
+        }
+        .warning-text {
+            color: #FF6B6B;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <h1>🍾 Polish Bar Profile</h1>
+            <div class="username">
+                Welcome, <strong>{{ username }}</strong>!
+            </div>
+        </div>
+
+        <!-- Preferred Beverage Section -->
+        <div class="info-section">
+            <h3>🥃 Your Preferred Beverage</h3>
+            
+            <!-- Current Beverage Display -->
+            {% if config.preferred_beverage %}
+                <div class="preferred-beverage">
+                    {{ config.preferred_beverage }}
+                </div>
+            {% else %}
+                <div class="preferred-beverage" style="background: rgba(255, 255, 255, 0.5); color: #666;">
+                    No preferred beverage set yet
+                </div>
+            {% endif %}
+
+            <!-- Update Beverage Form -->
+            <div class="beverage-form">
+                <h4 style="color: #8B0000; margin-top: 0;">Update Your Preferred Beverage</h4>
+                <form action="/config" method="post">
+                    <!-- Hidden config field - completely invisible to user -->
+                    <input type="hidden" name="config" value="preferred_beverage">
+                    
+                    <div class="form-group">
+                        <label for="beverage">Enter your favorite Polish drink:</label>
+                        <input type="text" 
+                               id="beverage" 
+                               name="value" 
+                               class="form-input"
+                               placeholder="e.g., Żubrówka, Vodka, Mead..." 
+                               required
+                               value="{{ config.preferred_beverage or '' }}">
+                    </div>
+
+                    {% if error %}
+                    <p style="color: red">{{ error }}</p>
+                    {% endif %}
+                    
+                    <button type="submit" class="form-submit">
+                        🍷 Update Beverage
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Alcohol Shelf Section -->
+        <div class="info-section">
+            <h3>🍻 Your Alcohol Shelf</h3>
+            
+            {% if config.alcohol_shelf and config.alcohol_shelf|length > 0 %}
+                <div class="alcohol-shelf">
+                    {% for drink in config.alcohol_shelf %}
+                        <div class="drink-item">
+                            {{ drink }}
+                        </div>
+                    {% endfor %}
+                </div>
+                <p style="text-align: center; margin: 15px 0; color: #666;">
+                    You have {{ config.alcohol_shelf|length }} drinks on your shelf
+                </p>
+            {% else %}
+                <div class="empty-shelf">
+                    🍃 Your alcohol shelf is empty. Time to go shopping!
+                </div>
+            {% endif %}
+
+            <!-- Add Drink Form -->
+            <div class="beverage-form">
+                <h4 style="color: #8B0000; margin-top: 0;">Manage Your Alcohol Shelf</h4>
+                
+                <div class="form-actions">
+                    <form action="/beverage" method="post" style="flex: 2;">                    
+                        <div class="form-group">
+                            <label for="new_drink">Add a new Polish drink:</label>
+                            <input type="text" 
+                                   id="new_drink" 
+                                   name="beverage" 
+                                   class="form-input"
+                                   placeholder="e.g., Soplica, Krupnik, Piwo..." 
+                                   required>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">
+                            ➕ Add to Shelf
+                        </button>
+                    </form>
+
+                    <form action="/empty" method="post" style="flex: 1;">                        
+                        <div class="form-group">
+                            <label for="empty_shelf" style="color: #FF6B6B;">Empty Shelf:</label>
+                            <button type="submit" class="form-submit form-submit-warning" 
+                                    style="width: 100%; height: 42px; margin-top: 8px;"
+                                    onclick="return confirm('Are you sure you want to empty your alcohol shelf? This action cannot be undone!')">
+                                🗑️ Empty Shelf
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Polish Bar Decoration -->
+        <div style="text-align: center; margin-top: 30px; color: #8B0000; font-size: 1.2em;">
+            🥂 Na zdrowie! 🥂
+        </div>
+    </div>
+</body>
+</html>

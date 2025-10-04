@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polish Bar - Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #8B0000, #D4AF37);
+            margin: 0;
+            padding: 20px;
+            color: #2C1810;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 248, 225, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 3px solid #D4AF37;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #8B0000;
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .header p {
+            color: #2C1810;
+            font-size: 1.2em;
+        }
+        .beverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+        .beverage-item {
+            background: linear-gradient(45deg, #D4AF37, #8B0000);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #8B0000, #A52A2A);
+            color: white;
+        }
+        .btn-secondary {
+            background: linear-gradient(45deg, #D4AF37, #B8860B);
+            color: #2C1810;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .polish-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 50 L75 25 L75 75 Z' fill='%23D4AF37' opacity='0.1'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="polish-pattern">
+    <div class="container">
+        <div class="header">
+            <h1>🍻 Polish MVM Bar 🍻</h1>
+            <p>Welcome to the kingdom of beverages!</p>
+        </div>
+        
+        <div class="beverage-grid">
+            <div class="beverage-item">Żubrówka</div>
+            <div class="beverage-item">Soplica</div>
+            <div class="beverage-item">Vodka</div>
+            <div class="beverage-item">Beer</div>
+            <div class="beverage-item">Mead</div>
+            <div class="beverage-item">Krupnik</div>
+            <div class="beverage-item">Rakia</div>
+            <div class="beverage-item">Schnapps</div>
+        </div>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <h2 style="color: #8B0000;">Cheers! 🥂</h2>
+            <p>Join our community of MVM beverage enthusiasts</p>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="/register" class="btn btn-secondary">Register</a>
+        </div>
+    </div>
+</body>
+</html>

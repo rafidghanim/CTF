@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willkommen auf der mega krassen Webseite xD</title>
+    <link rel="stylesheet" href="/verzierungen.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hallo {{benutzername}}, du bist voll der Boss! 💯</h1>
+        <p class="info">Willkommen zu unserer ultra-sicheren Elysia Anwendung, digga!</p>
+        
+        {{#if istGast}}
+        <div class="guest-message">
+            <p>👋 Du surfst als Gast rum, voll uncool! Gib deinen Namen ein für maximale Personalisierung, Bro!</p>
+        </div>
+        {{/if}}
+        
+        <form method="GET">
+            <div class="form-group">
+                <label for="benutzername">Gib deinen krassen Namen ein:</label>
+                <input type="text" id="benutzername" name="benutzername" value="{{benutzername}}" placeholder="Dein epischer Name hier..." />
+            </div>
+            <button type="submit">Begrüssung updaten!</button>
+        </form>
+        
+        {{#if zeigeBegruessung}}
+        <div class="greeting-info">
+            <p>✨ Willkommen zurück, {{benutzername}}! Du warst schon {{besucherZahlen}} mal hier, respekt!</p>
+            <p>Aktuelle Zeit: {{aktuelleZeit}} (voll wichtig zu wissen lol)</p>
+        </div>
+        {{/if}}
+
+        {{#unless istGast}}
+        <div class="actions">
+            <form method="GET" action="/flag" class="flag-form">
+                <input type="hidden" name="benutzername" value="{{benutzername}}" />
+                <div class="form-group">
+                    <label for="flagge">Submit deine krasse Flagge, Kumpel:</label>
+                    <input type="text" id="flagge" name="flagge" placeholder="flagge{ich_bin_so_1337}" />
+                </div>
+                <button type="submit" class="flag-btn">Flagge submitten wie ein Pro!</button>
+            </form>
+            <form method="POST" action="/admin" class="admin-form">
+                <input type="hidden" name="benutzername" value="{{benutzername}}" />
+                <button type="submit" class="admin-btn">🤖 Admin Bot starten (voll krass!)</button>
+            </form>
+        </div>
+        {{/unless}}
+        
+        <div class="info">
+            <p>🔒 Diese Seite hat eine mega strenge Inhalts-Sicherheitsrichtlinie die alles JavaScript blockt (so sicher, wow!)</p>
+        </div>
+    </div>
+</body>
+</html>

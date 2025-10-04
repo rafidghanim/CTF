@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polish Bar - Register</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2C1810, #D4AF37);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #2C1810;
+        }
+        .register-container {
+            background: rgba(255, 248, 225, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 3px solid #8B0000;
+            width: 100%;
+            max-width: 400px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo h1 {
+            color: #8B0000;
+            font-size: 2em;
+            margin: 0;
+        }
+        .logo p {
+            color: #2C1810;
+            margin: 5px 0 0 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2C1810;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #8B0000;
+            border-radius: 8px;
+            font-size: 1em;
+            box-sizing: border-box;
+            background: #FFF8E1;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        }
+        .btn-register {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(45deg, #D4AF37, #B8860B);
+            color: #2C1810;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn-register:hover {
+            background: linear-gradient(45deg, #B8860B, #D4AF37);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .error-message {
+            background: #FF6B6B;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 2px solid #8B0000;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login-link a {
+            color: #8B0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        .beverage-icons {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+        .benefits {
+            background: rgba(212, 175, 55, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #8B0000;
+        }
+        .benefits h3 {
+            margin: 0 0 10px 0;
+            color: #8B0000;
+        }
+        .benefits ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .benefits li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="logo">
+            <h1>🥃 Polish Bar</h1>
+            <p>Create new account</p>
+        </div>
+
+        {% if error %}
+        <div class="error-message">
+            {{ error }}
+        </div>
+        {% endif %}
+
+        <div class="benefits">
+            <h3>Join us today!</h3>
+            <ul>
+                <li>Discover Polish beverages</li>
+                <li>Create your own collection</li>
+                <li>Experience authentic Polish taste</li>
+            </ul>
+        </div>
+
+        <form method="POST" action="/register">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn-register">Register</button>
+        </form>
+
+        <div class="beverage-icons">
+            🍻 Żubrówka • 🍷 Soplica • 🥃 Vodka • 🍾 Beer
+        </div>
+
+        <div class="login-link">
+            <p>Already have an account? <a href="/login">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>
