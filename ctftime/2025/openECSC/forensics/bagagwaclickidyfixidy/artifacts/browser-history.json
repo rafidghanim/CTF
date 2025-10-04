@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1",
+    "url": "https://outlook.office.com/mail/inbox",
+    "title": "Inbox - Outlook",
+    "visit_count": 147,
+    "typed_count": 23,
+    "last_visit_time": "2024-03-15T14:08:32.123Z",
+    "hidden": 0,
+    "favicon_url": "https://outlook.office.com/favicon.ico"
+  },
+  {
+    "id": "2",
+    "url": "https://teams.microsoft.com/",
+    "title": "Microsoft Teams",
+    "visit_count": 89,
+    "typed_count": 15,
+    "last_visit_time": "2024-03-15T13:45:12.456Z",
+    "hidden": 0,
+    "favicon_url": "https://teams.microsoft.com/favicon.ico"
+  },
+  {
+    "id": "3",
+    "url": "https://docs.microsoft.com/en-us/security/",
+    "title": "Microsoft Security Documentation",
+    "visit_count": 7,
+    "typed_count": 2,
+    "last_visit_time": "2024-03-15T14:12:18.345Z",
+    "hidden": 0,
+    "favicon_url": "https://docs.microsoft.com/favicon.ico"
+  },
+  {
+    "id": "4",
+    "url": "https://portal.azure.com/",
+    "title": "Microsoft Azure Portal",
+    "visit_count": 34,
+    "typed_count": 8,
+    "last_visit_time": "2024-03-15T11:22:18.567Z",
+    "hidden": 0,
+    "favicon_url": "https://portal.azure.com/favicon.ico"
+  },
+  {
+    "id": "5",
+    "url": "https://www.virustotal.com/",
+    "title": "VirusTotal - Free Online Virus Scanner",
+    "visit_count": 12,
+    "typed_count": 4,
+    "last_visit_time": "2024-03-15T13:28:45.234Z",
+    "hidden": 0,
+    "favicon_url": "https://www.virustotal.com/favicon.ico"
+  },
+  {
+    "id": "6",
+    "url": "https://github.com/company/project-alpha",
+    "title": "GitHub - company/project-alpha",
+    "visit_count": 45,
+    "typed_count": 9,
+    "last_visit_time": "2024-03-15T12:30:45.234Z",
+    "hidden": 0,
+    "favicon_url": "https://github.com/favicon.ico"
+  },
+  {
+    "id": "7",
+    "url": "https://stackoverflow.com/questions/tagged/powershell",
+    "title": "PowerShell Questions - Stack Overflow",
+    "visit_count": 18,
+    "typed_count": 3,
+    "last_visit_time": "2024-03-15T10:45:12.789Z",
+    "hidden": 0,
+    "favicon_url": "https://stackoverflow.com/favicon.ico"
+  },
+  {
+    "id": "8",
+    "url": "https://learn.microsoft.com/en-us/powershell/",
+    "title": "PowerShell Documentation - Microsoft Learn",
+    "visit_count": 26,
+    "typed_count": 5,
+    "last_visit_time": "2024-03-15T09:15:23.456Z",
+    "hidden": 0,
+    "favicon_url": "https://learn.microsoft.com/favicon.ico"
+  },
+  {
+    "id": "9",
+    "url": "https://www.linkedin.com/feed/",
+    "title": "LinkedIn Feed",
+    "visit_count": 67,
+    "typed_count": 12,
+    "last_visit_time": "2024-03-15T08:30:45.123Z",
+    "hidden": 0,
+    "favicon_url": "https://www.linkedin.com/favicon.ico"
+  },
+  {
+    "id": "10",
+    "url": "https://security.microsoft.com/",
+    "title": "Microsoft 365 Defender",
+    "visit_count": 15,
+    "typed_count": 4,
+    "last_visit_time": "2024-03-15T13:55:12.678Z",
+    "hidden": 0,
+    "favicon_url": "https://security.microsoft.com/favicon.ico"
+  },
+  {
+    "id": "11",
+    "url": "https://www.reddit.com/r/sysadmin/",
+    "title": "r/sysadmin - Reddit",
+    "visit_count": 23,
+    "typed_count": 6,
+    "last_visit_time": "2024-03-15T07:45:33.234Z",
+    "hidden": 0,
+    "favicon_url": "https://www.reddit.com/favicon.ico"
+  },
+  {
+    "id": "12",
+    "url": "https://www.google.com/search?q=office+365+license+verification",
+    "title": "office 365 license verification - Google Search",
+    "visit_count": 1,
+    "typed_count": 1,
+    "last_visit_time": "2024-03-15T14:14:56.789Z",
+    "hidden": 0,
+    "favicon_url": "https://www.google.com/favicon.ico"
+  },
+  {
+    "id": "13",
+    "url": "https://licensing.mlcrosoft.com/verify",
+    "title": "Microsoft Office 365 - License Verification Required",
+    "visit_count": 1,
+    "typed_count": 0,
+    "last_visit_time": "2024-03-15T14:15:20.789Z",
+    "hidden": 0,
+    "favicon_url": ""
+  },
+  {
+    "id": "14",
+    "url": "https://admin.microsoft.com/",
+    "title": "Microsoft 365 Admin Center",
+    "visit_count": 31,
+    "typed_count": 7,
+    "last_visit_time": "2024-03-15T11:28:43.567Z",
+    "hidden": 0,
+    "favicon_url": "https://admin.microsoft.com/favicon.ico"
+  },
+  {
+    "id": "15",
+    "url": "https://www.shodan.io/",
+    "title": "Shodan - Search Engine for Internet-connected Devices",
+    "visit_count": 8,
+    "typed_count": 2,
+    "last_visit_time": "2024-03-14T16:22:15.234Z",
+    "hidden": 0,
+    "favicon_url": "https://www.shodan.io/favicon.ico"
+  },
+  {
+    "id": "16",
+    "url": "https://www.exploit-db.com/",
+    "title": "Exploit Database - Exploits for Penetration Testers",
+    "visit_count": 5,
+    "typed_count": 1,
+    "last_visit_time": "2024-03-14T14:33:27.891Z",
+    "hidden": 0,
+    "favicon_url": "https://www.exploit-db.com/favicon.ico"
+  },
+  {
+    "id": "17",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "title": "Rick Astley - Never Gonna Give You Up (Official Video)",
+    "visit_count": 3,
+    "typed_count": 0,
+    "last_visit_time": "2024-03-15T12:45:12.345Z",
+    "hidden": 0,
+    "favicon_url": "https://www.youtube.com/favicon.ico"
+  },
+  {
+    "id": "18",
+    "url": "https://techcommunity.microsoft.com/",
+    "title": "Microsoft Tech Community",
+    "visit_count": 19,
+    "typed_count": 3,
+    "last_visit_time": "2024-03-15T10:12:34.567Z",
+    "hidden": 0,
+    "favicon_url": "https://techcommunity.microsoft.com/favicon.ico"
+  },
+  {
+    "id": "19",
+    "url": "https://www.cve.org/",
+    "title": "CVE - Common Vulnerabilities and Exposures",
+    "visit_count": 11,
+    "typed_count": 2,
+    "last_visit_time": "2024-03-14T15:45:23.123Z",
+    "hidden": 0,
+    "favicon_url": "https://www.cve.org/favicon.ico"
+  },
+  {
+    "id": "20",
+    "url": "https://www.elastic.co/security",
+    "title": "Elastic Security - SIEM and Endpoint Security",
+    "visit_count": 14,
+    "typed_count": 3,
+    "last_visit_time": "2024-03-15T09:33:41.789Z",
+    "hidden": 0,
+    "favicon_url": "https://www.elastic.co/favicon.ico"
+  }
+]
