@@ -1,0 +1,11 @@
+FROM golang:1.24 AS builder
+WORKDIR /
+RUN mkdir app/
+ADD main.go crypto.go msgpack.go go.mod /app/
+
+RUN go build -C /app -tags netgo -o /server
+
+FROM scratch
+COPY --from=builder /server /server
+CMD ["/server"]
+EXPOSE 8000

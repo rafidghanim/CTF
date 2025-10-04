@@ -1,0 +1,14 @@
+services:
+  proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile.proxy
+    ports:
+      - "80:8000"
+
+  flask:
+    build:
+      context: .
+      dockerfile: Dockerfile.flask
+    environment:
+      FLAG: "openECSC{test-flag}"
