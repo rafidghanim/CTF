@@ -1,1 +1,0 @@
-ACT_CTF{6bf4b01a8284fc3261e99be9d478a4eab1d9d2cc4ae1fae85cae2ea0e766b337}

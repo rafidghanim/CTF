@@ -1,1 +1,0 @@
-ACT_CTF{rust_is_saf3_but_wh0_wr1te_pa$$w0rd_0n_the_variable_like_th1s_is_a_dumb_269a18f6}

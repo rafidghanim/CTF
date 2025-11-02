@@ -1,1 +1,0 @@
-ACT_CTF{da1469a3aa9a1ccb79eb5892bc8bb2581c287234ccd95d08dd2dd5c4a2de82b1} 

@@ -1,2 +1,0 @@
-docker run -it mengctf/login-system:flag /bin/bash
-ACT_CTF{D0ck0er_PiuL_fr0m_hUb}
