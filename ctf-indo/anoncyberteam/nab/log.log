@@ -1,0 +1,9 @@
+2024-03-16 11:57:45,006 [+] pydumpck is a multi-threads tool for decompile exe,elf,pyz,pyc packed by python which is base on pycdc and uncompyle6.sometimes its py-file result not exactly right ,maybe could use uncompyle6.
+--------------------
+pydumpck initilizing with 1.19.10 :pyinstaller_dump.py:120-20  /home/rafid/.local/lib/python3.10/site-packages/pydumpck/pyinstaller_dump.py on(pyinstaller_dump.run) at 6240@MainThread  
+2024-03-16 11:57:45,008 [*] plugins loaded with ['pycdc'] :__init__.py:165-10  /home/rafid/.local/lib/python3.10/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.load_plugins) at 6240@MainThread  
+2024-03-16 11:57:45,008 [*] target file input:make_password.pyc
+to:output_5737380 :__init__.py:206-10  /home/rafid/.local/lib/python3.10/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.main) at 6240@MainThread  
+2024-03-16 11:57:45,009 [*] start dump target file. type:pyc :__init__.py:213-10  /home/rafid/.local/lib/python3.10/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.main) at 6240@MainThread  
+2024-03-16 11:57:48,023 [!] Exception on decompile bytecode file:output_5737380/make_password.pyc,with error:[!] invalid pyc-struct data :__init__.py:45-30  /home/rafid/.local/lib/python3.10/site-packages/pydumpck/py_package/package_struct/__init__.py on(__init__.decompile_pyc) at 6240@MainThread  
+2024-03-16 11:57:48,024 [+] completed,cost 3018ms with result:pyc file handled:output_5737380/make_password.pyc :__init__.py:177-20  /home/rafid/.local/lib/python3.10/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.statistics_status) at 6240@MainThread  
